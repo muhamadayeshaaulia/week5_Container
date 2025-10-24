@@ -29,6 +29,14 @@ class Myhome extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(bottom: Radius.circular(30)),
         ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {
+              print('buton berhasil di klik');
+            },
+          ),
+        ],
       ),
     );
   }
