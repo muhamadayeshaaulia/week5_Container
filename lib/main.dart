@@ -44,14 +44,36 @@ class Myhome extends StatelessWidget {
           ),
         ],
       ),
-      body: Container(
-        alignment: Alignment.center,
-        margin: EdgeInsets.fromLTRB(10, 10, 15, 15),
-        decoration: BoxDecoration(
-          color: Colors.red,
-          borderRadius: BorderRadius.circular(10.0),
-        ),
-        child: Text('Ini adalah text di dalam container'),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: 200,
+            height: 300,
+            margin: EdgeInsets.only(top: 30, left: 20),
+            padding: EdgeInsets.all(20),
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Colors.amberAccent, Colors.blueAccent],
+              ),
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+            child: Text('Ini adalah text di dalam container'),
+          ),
+          Container(
+            width: 200,
+            height: 300,
+            margin: EdgeInsets.only(top: 30, left: 20),
+            padding: EdgeInsets.all(20),
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: Colors.red,
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+            child: Text('Ini adalah text di dalam container'),
+          ),
+        ],
       ),
     );
   }
