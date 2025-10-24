@@ -36,6 +36,12 @@ class Myhome extends StatelessWidget {
               print('buton berhasil di klik');
             },
           ),
+          IconButton(
+            icon: Icon(Icons.people_alt),
+            onPressed: () {
+              print('icon profil berhasil di klik');
+            },
+          ),
         ],
       ),
     );
