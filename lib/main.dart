@@ -68,19 +68,22 @@ class Myhome extends StatelessWidget {
             ),
           ),
 
-          Container(
-            width: 160,
-            height: 220,
-            margin: EdgeInsets.only(top: 30, left: 20),
-            padding: EdgeInsets.all(20),
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Colors.pinkAccent, Colors.purpleAccent],
+          Transform.rotate(
+            angle: 0.1,
+            child: Container(
+              width: 160,
+              height: 220,
+              margin: EdgeInsets.only(top: 30, left: 20),
+              padding: EdgeInsets.all(20),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Colors.pinkAccent, Colors.purpleAccent],
+                ),
+                borderRadius: BorderRadius.circular(10.0),
               ),
-              borderRadius: BorderRadius.circular(10.0),
+              child: Text('Ini adalah text di dalam container'),
             ),
-            child: Text('Ini adalah text di dalam container'),
           ),
         ],
       ),
