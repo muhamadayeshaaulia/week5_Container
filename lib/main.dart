@@ -80,9 +80,17 @@ class Myhome extends StatelessWidget {
                 gradient: LinearGradient(
                   colors: [Colors.pinkAccent, Colors.purpleAccent],
                 ),
+                image: DecorationImage(
+                  image: NetworkImage(
+                    'https://avatars.githubusercontent.com/u/157527738?v=4',
+                  ),
+                ),
                 borderRadius: BorderRadius.circular(10.0),
               ),
-              child: Text('Ini adalah text di dalam container'),
+              child: Text(
+                'Ini adalah text di dalam container dengan gambar network',
+                textAlign: TextAlign.center,
+              ),
             ),
           ),
         ],
