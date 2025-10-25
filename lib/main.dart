@@ -69,13 +69,15 @@ class Myhome extends StatelessWidget {
           ),
 
           Container(
-            width: 200,
-            height: 300,
+            width: 160,
+            height: 220,
             margin: EdgeInsets.only(top: 30, left: 20),
             padding: EdgeInsets.all(20),
             alignment: Alignment.center,
             decoration: BoxDecoration(
-              color: Colors.red,
+              gradient: LinearGradient(
+                colors: [Colors.pinkAccent, Colors.purpleAccent],
+              ),
               borderRadius: BorderRadius.circular(10.0),
             ),
             child: Text('Ini adalah text di dalam container'),
