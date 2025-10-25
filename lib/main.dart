@@ -63,8 +63,23 @@ class Myhome extends StatelessWidget {
               ),
             ),
             ListTile(
+              iconColor: Colors.blue,
               leading: Icon(Icons.home),
               title: Text('Home'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.settings),
+              title: Text('Settings'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.person),
+              title: Text('Profile'),
               onTap: () {
                 Navigator.pop(context);
               },
