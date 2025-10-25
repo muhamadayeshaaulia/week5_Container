@@ -57,6 +57,9 @@ class Myhome extends StatelessWidget {
               gradient: LinearGradient(
                 colors: [Colors.amberAccent, Colors.blueAccent],
               ),
+              image: DecorationImage(
+                image: AssetImage('assets/images/contoh.png'),
+              ),
               borderRadius: BorderRadius.circular(10.0),
             ),
             child: Text('Ini adalah text di dalam container'),
