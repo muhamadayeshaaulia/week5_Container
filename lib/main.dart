@@ -124,6 +124,7 @@ class Myhome extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        fixedColor: Colors.blue,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
