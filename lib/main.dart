@@ -47,23 +47,27 @@ class Myhome extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            width: 200,
-            height: 300,
-            margin: EdgeInsets.only(top: 30, left: 20),
-            padding: EdgeInsets.all(20),
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Colors.amberAccent, Colors.blueAccent],
+          Transform.rotate(
+            angle: -0.1,
+            child: Container(
+              width: 160,
+              height: 220,
+              margin: EdgeInsets.only(top: 30, left: 20),
+              padding: EdgeInsets.all(20),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Colors.amberAccent, Colors.blueAccent],
+                ),
+                image: DecorationImage(
+                  image: AssetImage('assets/images/contoh.png'),
+                ),
+                borderRadius: BorderRadius.circular(10.0),
               ),
-              image: DecorationImage(
-                image: AssetImage('assets/images/contoh.png'),
-              ),
-              borderRadius: BorderRadius.circular(10.0),
+              child: Text('Ini adalah text di dalam container'),
             ),
-            child: Text('Ini adalah text di dalam container'),
           ),
+
           Container(
             width: 200,
             height: 300,
